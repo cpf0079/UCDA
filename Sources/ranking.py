@@ -100,19 +100,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # inputs = torch.rand(1, 5)
-    # func = nn.Softmax(dim=1)
-    # outputs = func(inputs)
-    # # output = outputs.squeeze(0)
-    # dis = subjectivity(outputs)
-    # print(dis)
-
-    # list = []
-    # for i in range(500):
-    #     a = torch.rand(1)
-    #     list.append(((i+1), a.item()))
-    # print(list)
-    # cluster_subdomain(list, 0.6)
-
-
 
