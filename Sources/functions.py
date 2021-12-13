@@ -59,8 +59,6 @@ def single_distance(p, q, r=2):
 
 def distance(p, q, r=2):
 
-    # print(p.shape)
-    # print(q.shape)
     assert p.shape == q.shape, "Shape of the two distribution batches must be the same."
     mini_batch_size = p.shape[0]
     loss_vector = []
