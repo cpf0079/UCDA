@@ -10,6 +10,19 @@ Step 1. Conduct the domain adaptation between source and target domains by runni
 ```
 $ python ./Source/first_uda.py
 ```
+Step 2. Uncertainty-based ranking to split target domain into subdomains by running:
+```
+$ python ./Source/ranking.py
+```
+Step 3. Conduct the domain adaptation between subdomains by running:
+```
+$ python ./Source/second_uda.py
+```
+
+## Environment
+* Python 3.6.5
+* Pytorch 1.0.1
+* Cuda 9.0 Cudnn 7.1 
 
 ## Citation
 If you find this work useful for your research, please cite our paper:
