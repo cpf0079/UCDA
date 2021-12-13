@@ -26,19 +26,6 @@ class MyDataset(data.Dataset):
         self.imgs = imgs
         self.root = root
         self.crop_size = crop_size
-        # self.transform = transform
-        # self.target_transform = target_transform
-        # self.height = 540
-        # self.width = 960
-        # self.resized_height = 224
-        # self.resized_width = 224
-        #
-        # self.transform = transforms.Compose([
-        #     transforms.Resize((self.resized_height, self.resized_width)),
-        #     # transforms.ToTensor(),
-        #     transforms.Normalize(mean=[0.485, 0.456, 0.406],
-        #                          std=[0.229, 0.224, 0.225]),
-        #  ])
 
     def __getitem__(self, index):
         vid_name, label = self.imgs[index]
@@ -90,15 +77,6 @@ if __name__ == '__main__':
     print(name[0])
     print(s_img.size())
     print(s_label.size())
-    # print(len(train_loader))
-    # print(len(train_data))
-    # for _, (images, labels) in enumerate(train_loader):
-    #     print(images.size())
-    #     print(labels)
-
-    # img = Image.open('D:\\cpf\\Benchmarks\\VQA\\frames\\1_1.png').convert('RGB')
-    # # img = np.asarray(img, np.float32)
-    # print(img)
 
 
 
