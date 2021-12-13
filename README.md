@@ -8,15 +8,15 @@ We use the 10-fold cross-validation in our experiments. To reach to the comparab
 
 **Step 1.** Conduct the domain adaptation between source and target domains by running:
 ```
-$ python ./Source/first_uda.py
+$ python ./Sources/first_uda.py
 ```
 **Step 2.** Uncertainty-based ranking to split target domain into subdomains by running:
 ```
-$ python ./Source/ranking.py
+$ python ./Sources/ranking.py
 ```
 **Step 3.** Conduct the domain adaptation between subdomains by running:
 ```
-$ python ./Source/second_uda.py
+$ python ./Sources/second_uda.py
 ```
 
 ## Environment
