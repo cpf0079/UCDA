@@ -6,7 +6,7 @@ This the the repository includes the official codes for our ICCV2021 paper "[Uns
 ## Training
 We use the 10-fold cross-validation in our experiments. To reach to the comparable performance you may need to train a few times. 
 
-Step 1. Conduct the domain adaptation between source and target domains by running:
+*Step 1.* Conduct the domain adaptation between source and target domains by running:
 ```
 $ python ./Source/first_uda.py
 ```
