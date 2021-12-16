@@ -4,7 +4,7 @@ This the the repository includes the official codes for our ICCV2021 paper "[Uns
 ![image](https://github.com/cpf0079/UCDA/blob/main/framework.png)
 
 ## Training
-We use the 10-fold cross-validation in our experiments. To reach to the comparable performance you may need to train a few times. 
+We use the 10-fold cross-validation in our experiments. To reach to the comparable performance you may need to train a few times. Note that in the given training codes, no validation and test sets are used, you should split your own training/validation/test sets to save the best model during training.
 
 **Step 1.** Conduct the domain adaptation between source and target domains by running:
 ```
