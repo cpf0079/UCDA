@@ -65,7 +65,7 @@ def main():
 
     target_loader = torch.utils.data.DataLoader(dataset=target_data,
                                                 batch_size=batch_size,
-                                                shuffle=True)
+                                                shuffle=False)
 
     target_loader_iter = iter(target_loader)
 
