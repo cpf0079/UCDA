@@ -13,6 +13,7 @@ from config import cfg
 
 manual_seed = random.randint(1, 10000)
 random.seed(manual_seed)
+np.random.seed(manual_seed)
 torch.manual_seed(manual_seed)
 
 batch_size = cfg.BATCH_SIZE_TRAIN
