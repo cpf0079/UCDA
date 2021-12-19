@@ -12,7 +12,8 @@ class MyDataset(data.Dataset):
         super(MyDataset, self).__init__()
         fh = open(txt_dir, 'r')
         imgs = list()
-        labels = get_label(label_dir, num_samples)
+        self.num_samples = num_samples
+        labels = get_label(label_dir, self.num_samples)
         for line in fh:
             line = line.rstrip()
             words = line.split()
